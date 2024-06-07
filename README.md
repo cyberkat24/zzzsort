@@ -16,6 +16,4 @@ Sebuah penyortir termutakhirkan untuk karakter Zenless Zone Zero dengan tata let
 
 Kunjungi [zzz.sorter.ufal.my.id](https://zzz.sorter.ufal.my.id/)
 
-Versi bahasa Indonesia tidak tersedia.
-
 Dukung saya melalui [Trakteer (Indonesia)](https://trakteer.id/ufalsalman/tip) atau [PayPal (Internasional)](https://paypal.me/ufalsalman)
