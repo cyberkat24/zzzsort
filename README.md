@@ -3,11 +3,6 @@ A Zenless Zone Zero sorter with classic layout and more filters that based on [e
 
 Visit [zzz.sorter.ufal.my.id](https://zzz.sorter.ufal.my.id/)
 
-Latest changelog:<br>
-13 December 2023 - Started the project
-
-Contributors are open
-
 Supports me via [Trakteer (Indonesia)](https://trakteer.id/ufalsalman/tip) or [PayPal (International)](https://paypal.me/ufalsalman)
 
 ## Bahasa Indonesia
