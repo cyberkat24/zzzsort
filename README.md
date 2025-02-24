@@ -1,14 +1,18 @@
-# Zenless Zone Zero Character Sorter (zzzsort)
-A Zenless Zone Zero sorter with classic layout and more filters that based on [execfera's Touhou Project character sorter](https://tohosort.frelia.my/) source code.
+# Zenless Zone Zero Character Sorter
 
-Visit [zzz.sorter.ufal.my.id](https://zzz.sorter.ufal.my.id/)
+**[Go to site](https://cyberkat24.github.io/zzzsort/)**
 
-Supports me via [Trakteer (Indonesia)](https://trakteer.id/ufalsalman/tip) or [PayPal (International)](https://paypal.me/ufalsalman)
+A Zenless Zone Zero sorter based on
+[execfera's Touhou Project character sorter](https://tohosort.frelia.my/) source
+code.
 
-## Bahasa Indonesia
+Forked from [Ufal Salman's sorter](https://github.com/ritokatsuga/zzzsort).
 
-Sebuah penyortir termutakhirkan untuk karakter Zenless Zone Zero dengan tata letak klasik dan  filter yang lebih banyak yang berdasarkan pada kode sumber [penyortir karakter Touhou Project milik execfera](https://tohosort.frelia.my/).
+Updated to **Version 1.5**.
 
-Kunjungi [zzz.sorter.ufal.my.id](https://zzz.sorter.ufal.my.id/)
+# Planned features
 
-Dukung saya melalui [Trakteer (Indonesia)](https://trakteer.id/ufalsalman/tip) atau [PayPal (Internasional)](https://paypal.me/ufalsalman)
+- Further improvements to the interface.
+- Add bangboos.
+
+Any contributions are welcome.

@@ -6,27 +6,27 @@
   <meta charset="utf-8">
   <meta name="og:site_name" content="Zenless Zone Zero Character Sorter">
   <meta name="og:description" content="A simple website for sorting Zenless Zone Zero characters in a formatted list.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Zenless Zone Zero Character Sorter</title>
 
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
   <script src="src/js/data.js"></script>
-  <script src="src/js/data/2023-12-13.js"></script>
+  <script src="src/js/data/2025-02-24.js"></script>
   
   <script src="src/js/html2canvas.min.js"></script>
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
   <script src="src/js/darkmode.js"></script>
-<!--
-  <link href="/dist/svelte-bundle.css" rel="stylesheet" />
-  <script defer src="/dist/svelte-bundle.js"></script>
-  -->
+
 </head>
 
 <body>
 <div class="container">
+    <h1 class="page-title">Zenless Zone Zero Character Sorter</h1>
 
     <div class="progress">
         <span class="progressbattle"></span>
@@ -38,18 +38,18 @@
     <div class="sorter">
         <img src="src/assets/default.jpg" class="left sort image">
 
-        <div class="starting start button">Zenless Zone Zero Character Sorter<br><br>Click to Start!</div>
+        <div class="starting start button">Start</div>
         <div class="starting load button">Load <span></span></div>
 
         <div class="loading button"><div></div><span>Loading...</span></div>
 
-        <div class="sorting tie button">Tie</div>
-        <div class="sorting undo button">Undo</div>
-        <div class="sorting save button">Save Progress</div>
+        <button class="sorting tie button">Tie</button>
+        <button class="sorting undo button">Undo</button>
+        <button class="sorting save button">Save Progress</button>
 
-        <div class="finished save button">Generate Result URL</div>
-        <div class="finished getimg button">Generate Image</div>
-        <div class="finished list button">Generate Text List</div>
+        <button class="finished save button">Generate Result URL</button>
+        <button class="finished getimg button">Generate Image</button>
+        <button class="finished list button">Generate Text List</button>
 
         <img src="src/assets/default.jpg" class="right sort image">
 
@@ -79,22 +79,20 @@
 
         <br>
 
-        <p>Maintained by <a href="https://www.ufal.my.id">Ufal Salman</a></p>
-        <p>The source code is available on <a href="https://github.com/ritokatsuga/zzzsort/">this repository</a></p>
+        <p>Maintained by <a href="https://github.com/cyberkat24">cyberkat24</a></p>
+        <p>The source code is available on <a href="https://github.com/cyberkat24/zzzsort/">this repository.</a></p>
         <p>Based on <a href="https://tohosort.frelia.my/">execfera's Touhou sorter</a></p><br>
-
-        <p>Other sorters that available on <a href="https://sorter.ufal.my.id">sorter.ufal.my.id</a></p>
-        <p><a href="https://gakumas.sorter.ufal.my.id">Gakuen iDOLM@STER</a> | <a href="https://nijisanji.sorter.ufal.my.id">NIJISANJI</a> | <a href="https://hololive.sorter.ufal.my.id">hololive production</a><br><a href="https://endfield.sorter.ufal.my.id">Arknights: Endfield</a> | <a href="https://exastris.sorter.ufal.my.id">Ex Astris</a> | <a href="https://starrail.sorter.ufal.my.id">Honkai: Star Rail</a></p>
+        <p>Forked from <a href="https://github.com/ritokatsuga/zzzsort">Ufal's project</a></p><br>
 
         <br>      
 
-        <p>Latest  changelog:</p>
-        <p>13 December 2023 - Started the project.</p><br>
-        <p><a href="/changelogs.html">Previous changelogs</a> | <a href="#">Great Taste</a></p>
+        <p>Latest changelog:</p>
+        <p>24 February 2025 - Updated to version 1.5.</p><br>
+        <p><a href="/changelogs.html">Previous changelogs</a> | <a href="#">Go up</a></p>
 
         <br>
         
-        <p>If you encounter any issues, hit me up <a href="https://github.com/ritokatsuga/starrailsort/issues">here</a>.</p>
+        <p>Report issues <a href="https://github.com/cyberkat24/zzzsort/issues">here</a>.</p>
 
         <br>
     </div>

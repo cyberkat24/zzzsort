@@ -1,8 +1,33 @@
+@font-face {
+  font-family: 'inpin hongmengti';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/subset-inpin-hongmengti.woff2") format("woff2"),
+    url("../assets/fonts/subset-inpin-hongmengti.woff") format("woff");
+}
+
+:root {
+  --accent-color: #b5ff00
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  padding: 1rem;
+  font-family: "inpin hongmengti", Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: rgb(18, 18, 18);
   color: rgb(235, 235, 235);
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-color);
+}
+
+.page-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -21,10 +46,10 @@ body {
 .progressbar {
   position: relative;
   width: 492px;
-  border: 1px solid #f17c0b;
+  border: 1px solid var(--accent-color);
   padding: 3px;
-  margin: 2px 0px;
-  border-radius: 6%;
+  margin: .5rem 0px auto auto;
+  border-radius: 1rem;
 }
 
 .progresstext {
@@ -33,29 +58,47 @@ body {
   margin: 3px 0px;
   text-align: center;
   font-size: 0.7em;
+  color: black;
 }
 
 .progressfill {
   height: 20px;
-  background-color: #fc9546;
+  background-color: var(--accent-color);
   width: 0%;
+  border-radius: 1rem;
 }
 
 .sorter {
   margin: 0px auto;
   display: grid;
   grid-template-columns: 120px 1fr 120px;
-  grid-gap: 5px;
+  column-gap: 1rem;
+  row-gap: .5rem;
   width: 420px;
 }
 
 .button {
-  border: 1px solid #f17c0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  color: white;
+  font-family: "inpin hongmengti",
+    Arial,
+    Helvetica,
+    sans-serif;
+  border: 2px solid rgb(100, 100, 100);
   text-align: center;
   padding: 10%;
   grid-column: 2 / 3;
   cursor: pointer;
-  border-radius: 6%;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
+  color: black;
 }
 
 .starting.start.button {
@@ -67,7 +110,8 @@ body {
   display: none;
 }
 
-.sorting.button, .finished.button {
+.sorting.button,
+.finished.button {
   grid-row: span 2;
   display: none;
 }
@@ -77,26 +121,29 @@ body {
   display: none;
 }
 
-.loading.button > div {
+.loading.button>div {
   width: 25px;
   height: 25px;
   margin: 50px auto;
   background-color: rgb(0, 0, 0);
 
-  border-radius: 100%;  
+  border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
 /* Animation taken from: http://tobiasahlin.com/spinkit/ */
 
-.loading.button > span {
+.loading.button>span {
   margin: auto auto 20%;
   font-size: 0.7em;
 }
 
 @-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
+  0% {
+    -webkit-transform: scale(0)
+  }
+
   100% {
     -webkit-transform: scale(1.0);
     opacity: 0;
@@ -104,17 +151,19 @@ body {
 }
 
 @keyframes sk-scaleout {
-  0% { 
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 100% {
+  }
+
+  100% {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
     opacity: 0;
   }
 }
 
-.sorter > .image {
+.sorter>.image {
   width: 120px;
   height: 120px;
   margin: auto;
@@ -122,30 +171,41 @@ body {
   cursor: pointer;
 }
 
-.sorter > .text {
+.sorter>.text {
   width: 120px;
   height: 60px;
   display: none;
 }
 
-.sorter > .text > p {
-  margin: 0.5em 5px 0px;
+.sorter>.text>p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: calc(100%-10px);
   text-align: center;
   font-size: 0.8em;
   line-height: 1.5em;
+  height: inherit;
 }
 
-.sorter > .left {
+.sorter>.left {
   grid-column: 1 / 2;
-  border: 1px solid #f17c0b;
+  border: 1px solid rgb(100, 100, 100);
   border-radius: 6%;
 }
 
-.sorter > .right {
+.sorter>.left:hover {
+  outline: 2px solid var(--accent-color);
+}
+
+.sorter>.right {
   grid-column: 3 / 4;
-  border: 1px solid #f17c0b;
+  border: 1px solid rgb(100, 100, 100);
   border-radius: 6%;
+}
+
+.sorter>.right:hover {
+  outline: 2px solid var(--accent-color);
 }
 
 .options {
@@ -157,7 +217,7 @@ body {
   width: 450px;
 }
 
-.options > div {
+.options>div {
   font-size: 0.9em;
 }
 
@@ -165,7 +225,8 @@ label {
   cursor: pointer;
 }
 
-.options > .large.option, .options > hr {
+.options>.large.option,
+.options>hr {
   grid-column: span 3;
   text-align: center;
   width: 100%;
@@ -215,7 +276,7 @@ label {
   display: grid;
   width: 211px;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid #f17c0b;
+  border: 1px solid rgb(100, 100, 100);
   margin-right: 5px;
 }
 
@@ -229,15 +290,15 @@ label {
 
 .result.spacer {
   height: 1px;
-  background-color: #f17c0b;
+  background-color: rgb(100, 100, 100);
 }
 
 .result.head {
-  background-color: #f17c0b;
+  background-color: rgb(100, 100, 100);
   color: rgb(255, 255, 255);
 }
 
-.result > .left {
+.result>.left {
   width: 35px;
   padding: 1px 3px 1px 0.5em;
   grid-column: 1 / 2;
@@ -248,19 +309,23 @@ label {
   position: relative;
 }
 
-.result.image > .left span {
+.result.image>.left span {
   position: absolute;
   top: 50%;
   right: 3px;
   margin-top: -0.375em;
 }
 
-.result > .right {
+.result>.right {
   width: 160px;
   padding: 1px 0em 1px 0em;
   grid-column: 2 / 3;
-  border-left: 1px solid #f17c0b;
+  border-left: 1px solid rgb(100, 100, 100);
   text-align: center;
+}
+
+.getimg:hover a {
+  color: black;
 }
 
 .info {
@@ -273,18 +338,18 @@ label {
 }
 
 a {
-  color: #f17c0b;
+  color: var(--accent-color);
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: #f17c0b;
+  color: var(--accent-color);
 }
 
 a:visited {
-  color: #f17c0b;
+  color: var(--accent-color);
 }
 
 .wip {
@@ -295,4 +360,22 @@ a:visited {
 .gede {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .sorter {
+    width: 100%;
+  }
+
+  .options {
+    width: 100%;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .progressbar {
+    width: inherit;
+  }
 }
