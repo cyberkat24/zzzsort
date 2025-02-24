@@ -53,8 +53,6 @@ let totalBattles = 0;
 let sorterURL = window.location.host + window.location.pathname;
 let storedSaveType = localStorage.getItem(`${sorterURL}_saveType`);
 
-const noSlash = window.location.href.substring(0, window.location.href.length - 1);
-
 /** Initialize script. */
 function init() {
 
@@ -770,7 +768,7 @@ function preloadImages() {
 
   const loadImage = async (src) => {
 
-    const blob = await fetch(`${noSlash}${src}`).then(res => res.blob());
+    const blob = await fetch(`${window.location.href.split("?")[0]}${src}`).then(res => res.blob());
     return new Promise((res, rej) => {
       const reader = new FileReader();
       reader.onload = ev => {
