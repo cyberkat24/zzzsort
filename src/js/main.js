@@ -767,7 +767,8 @@ function preloadImages() {
   let imagesLoaded = 0;
 
   const loadImage = async (src) => {
-    const blob = await fetch(src).then(res => res.blob());
+    alert(`${window.location.href}${src}`);
+    const blob = await fetch(`${window.location.href}${src}`).then(res => res.blob());
     return new Promise((res, rej) => {
       const reader = new FileReader();
       reader.onload = ev => {
