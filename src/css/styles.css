@@ -249,6 +249,7 @@ label {
 }
 
 .results {
+  background-color: rgb(18, 18, 18);
   font-size: 0.75em;
   display: flex;
   align-content: flex-start;
